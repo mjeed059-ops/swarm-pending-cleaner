@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#111111" />
+  <title>Swarm Pending Cleaner</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <span class="eyebrow">SWARM TOOL</span>
+        <h1>Pending Cleaner</h1>
+        <p>Find outgoing requests still waiting, then cancel selected requests.</p>
+      </div>
+      <button id="login" class="primary">Connect Swarm</button>
+    </header>
+
+    <section class="card" id="tokenCard">
+      <h2>Local token mode</h2>
+      <p class="muted">Optional fallback for testing. Paste a Foursquare OAuth token; never paste your Swarm password.</p>
+      <div class="row">
+        <input id="token" type="password" placeholder="OAuth token" autocomplete="off"/>
+        <button id="useToken">Use token</button>
+      </div>
+    </section>
+
+    <section class="toolbar card">
+      <input id="search" placeholder="Search name or city" />
+      <button id="refresh">Refresh</button>
+      <button id="selectAll">Select all</button>
+      <button id="cancelSelected" class="danger" disabled>Cancel selected</button>
+    </section>
+
+    <section class="stats">
+      <div class="stat"><strong id="count">0</strong><span>Pending found</span></div>
+      <div class="stat"><strong id="selected">0</strong><span>Selected</span></div>
+    </section>
+
+    <div id="notice" class="notice hidden"></div>
+    <section id="list" class="list"></section>
+  </main>
+
+<script src="/app.js"></script>
+</body>
+</html>

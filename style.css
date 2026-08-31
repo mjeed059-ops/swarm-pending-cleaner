@@ -1,0 +1,35 @@
+:root{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;color:#f5f5f5;background:#0b0b0c}
+*{box-sizing:border-box}
+body{margin:0;background:#0b0b0c}
+main{max-width:900px;margin:auto;padding:28px 18px 80px}
+header{display:flex;gap:20px;justify-content:space-between;align-items:flex-start;margin:18px 0 24px}
+h1{font-size:42px;line-height:1;margin:5px 0 10px}
+h2{margin-top:0}
+p{color:#a8a8ad;margin:0;line-height:1.5}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;color:#ffb000}
+.card{background:#151517;border:1px solid #27272a;border-radius:18px;padding:16px;margin-bottom:14px}
+.toolbar{display:grid;grid-template-columns:1fr auto auto auto;gap:8px}
+.row{display:flex;gap:8px;margin-top:12px}
+input{width:100%;background:#0d0d0e;border:1px solid #343438;color:#fff;border-radius:12px;padding:13px;font-size:15px}
+button{border:0;border-radius:12px;padding:12px 14px;background:#2a2a2e;color:#fff;font-weight:700;cursor:pointer}
+button.primary{background:#ffb000;color:#15100a}
+button.danger{background:#b3261e}
+button:disabled{opacity:.45;cursor:not-allowed}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.stat{background:#151517;border-radius:16px;padding:16px;border:1px solid #27272a}
+.stat strong{font-size:26px;display:block}
+.stat span{font-size:13px;color:#98989f}
+.item{display:grid;grid-template-columns:auto 48px 1fr auto;align-items:center;gap:12px;background:#151517;border:1px solid #27272a;border-radius:16px;padding:12px;margin-bottom:8px}
+.avatar{width:48px;height:48px;border-radius:50%;object-fit:cover;background:#29292d}
+.name{font-weight:800}
+.meta{font-size:13px;color:#929299;margin-top:3px}
+.notice{padding:13px 15px;border:1px solid #5c4a13;background:#241e0d;border-radius:14px;color:#f4d577;margin-bottom:14px}
+.hidden{display:none}
+.muted{font-size:13px}
+@media(max-width:680px){
+  header{display:block}
+  header button{margin-top:16px;width:100%}
+  .toolbar{grid-template-columns:1fr 1fr}
+  .toolbar input{grid-column:1/-1}
+  h1{font-size:36px}
+}
